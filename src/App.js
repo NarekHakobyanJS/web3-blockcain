@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Blockchain from './components/Blockchain/ Blockchain';
+import Consensus from './components/Consensus/Consensus';
+import Header from './components/Header/Header';
+import Web3Story from './components/Web3Story/Web3Story';
+import HomePage from './pages/HomePage/HomePage';
+import Web3Page from './pages/Web3Page/Web3Page';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Header />
+     <Routes>
+      <Route path="/" element={<HomePage /> } />
+      <Route path='/web3' element={<Web3Page /> }/>
+      <Route path="/web3/web3story" element={<Web3Story /> } />
+      <Route path='/web3/blockchain' element={<Blockchain /> }/>
+      <Route path='/web3/consensus' element={<Consensus /> }/>
+     </Routes>
     </div>
   );
 }

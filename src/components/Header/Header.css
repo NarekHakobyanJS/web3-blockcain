@@ -1,0 +1,17 @@
+header {
+    position: sticky;
+    top : 0;
+    left : 0;
+    padding: 30px;
+    margin-bottom: 50px;
+    background: white;
+    border-bottom: 2px solid black;
+}
+
+header a {
+    text-decoration: none;
+    font-size: 18px;
+    gap : 15px;
+    color : black;
+
+}

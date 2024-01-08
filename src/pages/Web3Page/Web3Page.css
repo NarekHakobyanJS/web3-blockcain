@@ -1,0 +1,9 @@
+.Web3Page{
+    display: flex;
+    gap : 35px;
+    flex-direction: column;
+}
+
+.Web3Page h1 {
+    text-align: center;
+}

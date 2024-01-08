@@ -1,0 +1,20 @@
+.homepage {
+    display : flex;
+    justify-content: center;
+    gap : 35px
+}
+.homepage > div {
+    width: 300px;
+    height: 400px;
+    border : 2px solid black;
+}
+
+.homepage > div > a {
+    text-align: center;
+    display: block;
+    padding-top: 150px;
+    font-size: 24px;
+    font-weight: 700;
+    color : black;
+    text-decoration: none;
+}
